@@ -5,6 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose')
 
+//connexion a la base de donner
+mongoose.connect('mongodb://127.0.0.1:27017/MyDatabase', {useNewUrlParser: true})
+  .then(()=>console.log("Connection Success"))
+  .catch(()=>console.log("connection failed"));
+
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
