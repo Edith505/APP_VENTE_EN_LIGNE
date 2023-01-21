@@ -20,7 +20,10 @@ let UserSchema = new Schema({
             type :String,
             required : true
      },
-     avatar : String,
+     avatar : {
+      type :String,
+      required : true
+      },
      CreationUser : {
             type: Date,
             default: Date.now()

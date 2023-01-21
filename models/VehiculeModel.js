@@ -5,12 +5,18 @@ const Schema = mongoose.Schema;
  * Creation du model D'un vehicule
  */
 let VehiculeSchema = new Schema({
-      image:String,
+      image:{
+            type :String,
+            required : true
+      },
       model: {
             type :String,
             required : true
       },
-      descripion:String,
+      descripion:{
+            type :String,
+            required : true
+      },
       anne:{
             type: Number,
             required: true

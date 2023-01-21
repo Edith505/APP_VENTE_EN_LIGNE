@@ -8,4 +8,10 @@
 
 #Etape 5 : Creation du model User
 
-#Etape 6 : 
+#Etape 6 : Telecharger postman
+
+#Etape 7 : Creation du controleur route associé a vehicul et tester avec postman
+-En cas de succès, on retournera le vehicule avec le_id fourni sous la forme d'un objet JSON
+-creation d'un route pour un vehicule
+-Inseret dans app la route du vehicule
+
